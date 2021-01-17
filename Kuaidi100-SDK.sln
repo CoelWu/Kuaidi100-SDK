@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kuaidi100-SDK", "Kuaidi100-SDK\Kuaidi100-SDK.csproj", "{F6A4B426-C969-46D2-91D8-41E57B980070}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kuaidi100-ConsoleApp", "Kuaidi100-ConsoleApp\Kuaidi100-ConsoleApp.csproj", "{A115EE96-B9B7-4A82-95DF-5B98EFDAC1A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6A4B426-C969-46D2-91D8-41E57B980070}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6A4B426-C969-46D2-91D8-41E57B980070}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6A4B426-C969-46D2-91D8-41E57B980070}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6A4B426-C969-46D2-91D8-41E57B980070}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A115EE96-B9B7-4A82-95DF-5B98EFDAC1A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A115EE96-B9B7-4A82-95DF-5B98EFDAC1A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A115EE96-B9B7-4A82-95DF-5B98EFDAC1A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A115EE96-B9B7-4A82-95DF-5B98EFDAC1A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5366E122-0771-4DE4-A788-31E7A9AA7B4A}
+	EndGlobalSection
+EndGlobal

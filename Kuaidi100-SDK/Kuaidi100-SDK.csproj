@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Kuaidi100.SDK</RootNamespace>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Copyright>Copyright (c) 2018-2021 Coel Wu.</Copyright>
+    <Authors>Coel Wu</Authors>
+    <PackageId>CoelWu.Kuaidi100.SDK</PackageId>
+    <Product>Kuaidi100.SDK</Product>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <Description>快递100 API C#实现
+源代码: https://github.com/CoelWu/Kuaidi100-SDK
+Kuaidi100 C# API Wrapper
+Source Code: https://github.com/CoelWu/Kuaidi100-SDK</Description>
+    <PackageIcon>Kuaidi100_icon.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Assets\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Assets\Kuaidi100_icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
