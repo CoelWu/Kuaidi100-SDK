@@ -15,6 +15,7 @@
 Kuaidi100 C# API Wrapper
 Source Code: https://github.com/CoelWu/Kuaidi100-SDK</Description>
     <PackageIcon>Kuaidi100_icon.png</PackageIcon>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>

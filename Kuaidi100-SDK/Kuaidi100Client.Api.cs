@@ -21,5 +21,13 @@ namespace Kuaidi100.SDK
         {
             get => _baseUrl + "/query";
         }
+
+        /// <summary>
+        /// 快递公司图标
+        /// </summary>
+        private string API_ICON
+        {
+            get => _picUrl + "/images/all/56/";
+        }
     }
 }

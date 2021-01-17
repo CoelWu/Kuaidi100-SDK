@@ -12,11 +12,13 @@ namespace Kuaidi100.SDK
     public sealed partial class Kuaidi100Client : IDisposable
     {
         private static string _baseUrl;
+        private static string _picUrl;
         internal HttpClient _httpClient;
 
         public Kuaidi100Client()
         {
             _baseUrl = "https://m.kuaidi100.com";
+            _picUrl = "https://cdn.kuaidi100.com";
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12 | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls;
             _httpClient = new HttpClient();
             _httpClient.DefaultRequestHeaders.Add("Host", "www.kuaidi100.com");
@@ -54,6 +56,11 @@ namespace Kuaidi100.SDK
             response.EnsureSuccessStatusCode();
             string result = await response.Content.ReadAsStringAsync();
             return JsonConvert.DeserializeObject<T>(result);
+        }
+
+        public string GetCompanyIconUrl(string type)
+        {
+            return API_ICON + type + ".png";
         }
 
         public void Dispose()
