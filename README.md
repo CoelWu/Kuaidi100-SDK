@@ -24,8 +24,12 @@ Kuaidi100Client _client = new Kuaidi100Client();
 var autoComNumResponse = await _client.AutoCompanyNumber(id: "快递单号");
 
 // 获取物流信息
-var queryResponse = await _client.QueryQueryStatus(type: autoComNumResponse.Data[0].CompanyCode, postid: "快递单号", phone: "");
+var postStatusResponse = await _client.QueryPostStatus(type: autoComNumResponse.Data[0].CompanyCode, postid: "快递单号", phone: "");
 ```
+
+## 更多例子
+
+如需要更多使用案例，请参考 **Kuaidi100-ConsoleApp**
 
 ## 释放
 

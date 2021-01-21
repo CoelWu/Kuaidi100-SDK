@@ -1,11 +1,11 @@
-﻿using Newtonsoft.Json;
+﻿ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Kuaidi100.SDK.Models.Share
 {
-    public class Track
+    public class PostTrack
     {
         /// <summary>
         /// 时间，原始格式

@@ -1,4 +1,5 @@
-﻿using Kuaidi100.SDK.Models.Share;
+﻿using Kuaidi100.SDK.Enums;
+using Kuaidi100.SDK.Models.Share;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -6,7 +7,7 @@ using System.Text;
 
 namespace Kuaidi100.SDK.Models.Response
 {
-    public class QueryResponse
+    public class PostStatusResponse
     {
         /// <summary>
         /// HTTP返回的数据状态说明
@@ -30,7 +31,7 @@ namespace Kuaidi100.SDK.Models.Response
         /// 快递状态
         /// </summary>
         [JsonProperty("state")]
-        public string State { get; set; }
+        public StateType State { get; set; }
 
         /// <summary>
         /// 快递是否签收标记
@@ -54,6 +55,6 @@ namespace Kuaidi100.SDK.Models.Response
         /// 快递跟踪进度
         /// </summary>
         [JsonProperty("data")]
-        public List<Track> Data { get; set; }
+        public List<PostTrack> Data { get; set; }
     }
 }

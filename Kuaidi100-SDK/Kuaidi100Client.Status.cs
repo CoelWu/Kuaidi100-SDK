@@ -29,7 +29,7 @@ namespace Kuaidi100.SDK
             return result;
         }
 
-        public async Task<QueryResponse> QueryStatus(string type, string postid, string phone = "")
+        public async Task<PostStatusResponse> QueryPostStatus(string type, string postid, string phone = "")
         {
             if (type == "shunfeng")
             {
@@ -49,7 +49,7 @@ namespace Kuaidi100.SDK
             dict.Add("token", "");
             dict.Add("platform", "MWWW");
 
-            var result = await PostAsync<QueryResponse>(API_QUERY, dict);
+            var result = await PostAsync<PostStatusResponse>(API_POST_STATUS, dict);
             return result;
         }
     }

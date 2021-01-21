@@ -18,6 +18,6 @@ namespace Kuaidi100.SDK.Models.Response
         /// 真正的数据
         /// </summary>
         [JsonProperty("auto")]
-        public List<Auto> Data { get; set; }
+        public List<AutoCompany> Data { get; set; }
     }
 }

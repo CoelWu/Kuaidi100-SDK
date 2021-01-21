@@ -17,9 +17,17 @@ namespace Kuaidi100.SDK
         /// <summary>
         /// 查询快递状态
         /// </summary>
-        private string API_QUERY
+        private string API_POST_STATUS
         {
             get => _baseUrl + "/query";
+        }
+
+        /// <summary>
+        /// 时效价格
+        /// </summary>
+        private string API_PRICE
+        {
+            get => _baseUrl + "/apicenter/kdquerytools.do";
         }
 
         /// <summary>

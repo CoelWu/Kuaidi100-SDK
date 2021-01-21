@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Kuaidi100.SDK.Models.Share
 {
-    public class Auto
+    public class AutoCompany
     {
         /// <summary>
         /// 快递公司代码

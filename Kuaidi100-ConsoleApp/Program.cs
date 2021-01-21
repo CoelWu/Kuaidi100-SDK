@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Kuaidi100.SDK;
+using Kuaidi100.SDK.Enums;
 
 namespace Kuaidi100.ConsoleApp
 {
@@ -31,9 +32,23 @@ namespace Kuaidi100.ConsoleApp
                     Console.Write("请输入收件人手机号后四位：");
                     phone = Console.ReadLine();
                 }
-                var queryResponse = await _client.QueryStatus(autoComNumberResponse.Data[0].CompanyCode, id, phone);
-                Console.WriteLine("快递状态如下:");
-                foreach (var data in queryResponse.Data)
+                var postStatusResponse = await _client.QueryPostStatus(autoComNumberResponse.Data[0].CompanyCode, id, phone);
+                switch (postStatusResponse.State)
+                {
+                    case StateType.Collected:
+                        Console.WriteLine("快递状态: 已揽收");
+                        break;
+                    case StateType.Delivering:
+                        Console.WriteLine("快递状态: 派送中");
+                        break;
+                    case StateType.Signed:
+                        Console.WriteLine("快递状态: 已签收");
+                        break;
+                    default:
+                        break;
+                }
+                Console.WriteLine("快递追踪如下:");
+                foreach (var data in postStatusResponse.Data)
                 {
                     Console.WriteLine($"{data.FormatTime} {data.Context}");
                 }
